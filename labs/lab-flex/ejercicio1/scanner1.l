@@ -31,7 +31,7 @@
  /* TODO 4 — Comodín: cualquier carácter no reconocido por las reglas anteriores
    Pista: el patrón . coincide con cualquier carácter
    Acción esperada: printf("caracter no reconocido: %s\n", yytext);      */
-   
+  .               { printf("caracter no reconocido: %s\n", yytext); }
 %%
 
 int main(void) {
